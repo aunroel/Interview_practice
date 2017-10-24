@@ -7,6 +7,7 @@ public class Zero_matrix {
         int[][] test = {{1,3,0,4,0},
                         {4,1,3,4,1},
                         {0,2,4,2,1}};
+
         test = zero_matrix.transformMatrix(test);
         for (int i = 0; i < test.length; i++) {
             for (int j = 0; j < test[0].length; j++) {
@@ -33,8 +34,10 @@ public class Zero_matrix {
         }
 
         for (int i = 0; i < rows.length; i++) {
-            if (rows[i] == 1)
-                input_m[i] = new int[cols.length];
+            for (int j = 0; j < cols.length; j++) {
+                if (rows[i] == 1 || cols[j] == 1)
+                    input_m[i][j] = 0;
+            }
         }
 
         return input_m;
