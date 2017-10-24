@@ -14,7 +14,7 @@ public class DeleteMiddleNode {
     }
 
     void deleteMiddleNode(Node node) {
-        if (node.getNext() == null)
+        if (node == null || node.getNext() == null)
             return;
 
         node.setData(node.getNext().getData());

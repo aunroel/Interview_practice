@@ -24,6 +24,14 @@ public class Intersection {
         System.out.println(intersection.intersect(linkedList.root, list.root));
     }
 
+
+    /**
+     * Takes O(A*B) times, can be done in O(A+B) tho.
+     * Take a look at end of both lists-should be same if intersect
+     * @param root1
+     * @param root2
+     * @return
+     */
     boolean intersect(Node root1, Node root2) {
         if (root1 == null || root2 == null)
             return false;

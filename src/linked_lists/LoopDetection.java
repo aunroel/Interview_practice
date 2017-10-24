@@ -35,9 +35,18 @@ public class LoopDetection {
             slow = slow.getNext();
             fast = fast.getNext().getNext();
             if (fast == slow)
-                return slow;
+                break;
         }
-        return null;
+        if (fast == null || fast.getNext() == null)
+            return null;
+
+        slow = root;
+        while (slow != fast) {
+            slow = slow.getNext();
+            fast = fast.getNext();
+        }
+
+        return fast;
     }
 
 }

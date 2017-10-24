@@ -26,7 +26,6 @@ public class Compression {
                 sb.append(letter_counter);
                 letter_counter = 1;
                 sb.append(s.charAt(i));
-
             } else {
                 letter_counter++;
             }

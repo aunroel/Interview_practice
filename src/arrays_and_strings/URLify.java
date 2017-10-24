@@ -6,7 +6,7 @@ public class URLify {
 
     public static void main(String[] args) {
         URLify urLify = new URLify();
-        String s = "I am sick of this shit          ";
+        String s = "I am sick of this work          ";
         System.out.println(urLify.whitespaceReplacer(s.toCharArray(), 22));
     }
 
@@ -23,6 +23,6 @@ public class URLify {
                 index_corrector += 2;
             }
         }
-        return Arrays.toString(res);
+        return new String(res);
     }
 }
