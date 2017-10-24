@@ -5,7 +5,10 @@ public class LinkedList {
     Node root;
     int size = 0;
 
-    LinkedList() {}
+    LinkedList(int d) {
+        root = new Node(d);
+        size = 1;
+    }
 
     LinkedList(Node root) {
         this.root = root;

@@ -42,6 +42,12 @@ public class KthToLast {
         return null;
     }
 
+    /**
+     * If size is unknown
+     * @param index
+     * @param list
+     * @return
+     */
     Node findNodeFromTheEnd(int index, LinkedList list) {
         Node curr_node = list.root;
         int l_size = 0;
