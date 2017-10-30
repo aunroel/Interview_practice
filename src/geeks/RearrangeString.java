@@ -23,7 +23,7 @@ public class RearrangeString {
             }
             if (!table.containsKey(c)) {
                 table.put(c, 1);
-            }else
+            } else
                 table.replace(c, table.get(c) + 1);
         }
         for (char i = 'A'; i <= 'Z' && !table.isEmpty(); i++) {
